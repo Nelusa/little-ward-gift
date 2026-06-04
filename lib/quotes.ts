@@ -12,7 +12,7 @@ export const config = {
   senderName: "Neluška",
   videoUrl: "https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1",
   videoTitle: "How a little thing came to be",
-  videoSubtitle: "A very serious documentary. (It is not.)",
+  videoSubtitle: "A love letter, in documentary form.",
   // Navazuje na item-build dopis — ward jako jeden z itemů, support metafora, anticipace
   dedication: [
     "Okay honey, listen.",

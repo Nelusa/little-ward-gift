@@ -40,8 +40,8 @@ export default function LoadingScreen({ onFinished }: { onFinished: () => void }
           transition={{ duration: 1.2 }}
           className="text-center text-shadow-gold"
         >
-          <h1 className="font-cinzel font-black uppercase text-secondary text-5xl sm:text-6xl md:text-7xl leading-[0.95]">
-            A Gift<br />Awaits
+          <h1 className="font-cinzel font-semibold uppercase text-secondary text-4xl sm:text-5xl md:text-6xl leading-tight tracking-[0.05em] whitespace-nowrap">
+            A Gift Awaits
           </h1>
           <p className="mt-3 text-foreground/70 italic font-serif-body text-base sm:text-lg">
             Forged in secret. Probably for you, honey.

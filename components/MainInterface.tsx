@@ -14,7 +14,7 @@ export default function MainInterface() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="relative z-10 flex flex-col items-center px-4 sm:px-6 pt-16 sm:pt-20 pb-10 sm:pb-12"
+        className="relative z-10 flex flex-col items-center px-4 sm:px-6 pt-16 sm:pt-20 pb-12 sm:pb-16"
       >
         <header className="text-center max-w-2xl mb-10">
           <h2 className="font-cinzel font-bold uppercase text-secondary text-xl sm:text-2xl md:text-3xl text-shadow-gold leading-tight tracking-wider">
@@ -51,18 +51,15 @@ export default function MainInterface() {
               <p key={i}>{line}</p>
             ))}
           </div>
-          <div className="mt-6 text-secondary font-cinzel uppercase tracking-widest text-lg sm:text-xl">
-            Your {config.senderName}
-          </div>
         </motion.section>
 
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.6 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.8 }}
-          className="mt-6 text-secondary/60 font-serif-body italic text-sm sm:text-base"
+          className="mt-6 text-secondary uppercase tracking-[0.25em] text-lg sm:text-xl font-semibold text-center"
         >
-          Made by hand, 2026
+          Your {config.senderName} <span className="ml-1">♥</span>
         </motion.div>
       </motion.div>
     </div>
