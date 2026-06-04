@@ -29,15 +29,25 @@ export default function MainInterface() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="frame-corner relative w-full max-w-4xl aspect-video border-2 border-secondary bg-black shadow-gold-glow"
+          className="frame-corner relative w-full max-w-sm aspect-[9/16] border-2 border-secondary bg-black shadow-gold-glow"
         >
-          <iframe
-            src={config.videoUrl}
-            title="Pendant Making"
-            allow="autoplay; encrypted-media; fullscreen"
-            allowFullScreen
-            className="w-full h-full"
-          />
+          {config.videoUrl.startsWith("http") ? (
+            <iframe
+              src={config.videoUrl}
+              title="Little ward making"
+              allow="autoplay; encrypted-media; fullscreen"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          ) : (
+            <video
+              src={config.videoUrl}
+              poster={config.videoPoster || undefined}
+              controls
+              playsInline
+              className="w-full h-full"
+            />
+          )}
         </motion.div>
 
         <motion.section

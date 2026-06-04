@@ -10,7 +10,12 @@ export const quotes: string[] = [
 export const config = {
   recipientName: "honey",
   senderName: "Neluška",
-  videoUrl: "https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1",
+  // Cesta k lokálnímu souboru v /public, NEBO YouTube embed URL
+  // - lokální: "/video.mp4"
+  // - YouTube: "https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1"
+  videoUrl: "/video.mp4",
+  // Pokud chceš plakát (obrázek co se ukáže před přehráním), dej cestu sem
+  videoPoster: "" as string,
   videoTitle: "How a little thing came to be",
   videoSubtitle: "A love letter, in documentary form.",
   // Navazuje na item-build dopis — ward jako jeden z itemů, support metafora, anticipace
