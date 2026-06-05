@@ -16,15 +16,6 @@ export default function MainInterface() {
         transition={{ duration: 1, delay: 0.2 }}
         className="relative z-10 flex flex-col items-center px-4 sm:px-6 pt-16 sm:pt-20 pb-12 sm:pb-16"
       >
-        <header className="text-center max-w-2xl mb-10">
-          <h2 className="font-cinzel font-bold uppercase text-secondary text-xl sm:text-2xl md:text-3xl text-shadow-gold leading-tight tracking-wider">
-            {config.videoTitle}
-          </h2>
-          <div className="mt-2 text-foreground/60 italic font-serif-body text-base sm:text-lg">
-            {config.videoSubtitle}
-          </div>
-        </header>
-
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
